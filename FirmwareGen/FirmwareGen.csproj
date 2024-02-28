@@ -10,6 +10,7 @@
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 	</PropertyGroup>
 	<ItemGroup>
+	  <None Remove="DeviceProfiles\CepheusHalfSplit128GB.xml" />
 	  <None Remove="DeviceProfiles\EpsilonHalfSplit128GB.xml" />
 	  <None Remove="DeviceProfiles\EpsilonHalfSplit256GB.xml" />
 	  <None Remove="DeviceProfiles\EpsilonMaximizedForWindows.xml" />
@@ -20,6 +21,9 @@
 	  <None Remove="DeviceProfiles\ZetaMaximizedForWindows.xml" />
 	</ItemGroup>
 	<ItemGroup>
+	  <Content Include="DeviceProfiles\CepheusHalfSplit128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	  <Content Include="DeviceProfiles\EpsilonHalfSplit128GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
