@@ -13,7 +13,7 @@
       <TypeGUID>6A4AFEF7-0D3F-453A-8A48-6373F67FFFF0</TypeGUID>
       <UID>1F1F0FC4-F729-0199-1974-3BFD835EF759</UID>
       <FirstLBA>6</FirstLBA>
-      <LastLBA>8</LastLBA>
+      <LastLBA>7</LastLBA>
       <Attributes>0</Attributes>
       <Name>switch</Name>
     </GPTPartition>
