@@ -106,6 +106,14 @@
       <Name>metadata</Name>
     </GPTPartition>
     <GPTPartition>
+      <TypeGUID>AD99F201-DC71-4E30-9630-E19EEF553D1B</TypeGUID>
+      <UID>EBF1B54A-BEFA-B4FD-D897-01FE7793858B</UID>
+      <FirstLBA>32604</FirstLBA>
+      <LastLBA>40959</LastLBA>
+      <Attributes>0</Attributes>
+      <Name>splash</Name>
+    </GPTPartition>
+    <GPTPartition>
       <TypeGUID>6C95E238-E343-4BA8-B489-8681ED22AD0B</TypeGUID>
       <UID>CAD95B52-48C9-AE72-AB21-56DC724A813F</UID>
       <FirstLBA>49152</FirstLBA>
