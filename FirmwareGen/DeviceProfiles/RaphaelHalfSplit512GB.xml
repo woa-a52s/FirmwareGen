@@ -4,7 +4,7 @@
   <PlatformIDs>
     <string>Xiaomi.Surface.K20 Pro.raphael</string>
   </PlatformIDs>
-  <FFUFileName>Raphael_128GB_HalfSplit.ffu</FFUFileName>
+  <FFUFileName>Raphael_512GB_HalfSplit.ffu</FFUFileName>
   <DriverDefinitionPath>\definitions\Desktop\ARM64\Internal\raphael.xml</DriverDefinitionPath>
   <DiskTotalSize>505304580096</DiskTotalSize>
   <DiskSectorSize>4096</DiskSectorSize>

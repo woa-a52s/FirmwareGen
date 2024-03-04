@@ -4,7 +4,7 @@
   <PlatformIDs>
     <string>Xiaomi.Surface.Poco X3 Pro.vayu</string>
   </PlatformIDs>
-  <FFUFileName>vayu_128GB_HalfSplit.ffu</FFUFileName>
+  <FFUFileName>Vayu_Samsung_Huaxing_256GB_HalfSplit.ffu</FFUFileName>
   <DriverDefinitionPath>\definitions\Desktop\ARM64\Internal\vayu_huaxing.xml</DriverDefinitionPath>
   <DiskTotalSize>254619418624</DiskTotalSize>
   <DiskSectorSize>4096</DiskSectorSize>
