@@ -2,7 +2,7 @@
 <DeviceProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SupplementaryBCDCommands />
   <PlatformIDs>
-    <string>Xiaomi.Surface.Poco X3 Pro.vayu</string>
+    <string>Xiaomi.Surface.POCO X3 Pro.vayu</string>
   </PlatformIDs>
   <FFUFileName>Vayu_Samsung_Huaxing_128GB_HalfSplit.ffu</FFUFileName>
   <DriverDefinitionPath>\definitions\Desktop\ARM64\Internal\vayu_huaxing.xml</DriverDefinitionPath>
@@ -85,7 +85,7 @@
       <TypeGUID>7C7E2B25-D52C-4829-BA6E-76408DF1B3CF</TypeGUID>
       <UID>52FCDEC0-6AD1-509D-9C97-2C4DAEC5B6B4</UID>
       <FirstLBA>6144</FirstLBA>
-      <LastLBA>6143</LastLBA>
+      <LastLBA>8191</LastLBA>
       <Attributes>0</Attributes>
       <Name>ffu</Name>
     </GPTPartition>
