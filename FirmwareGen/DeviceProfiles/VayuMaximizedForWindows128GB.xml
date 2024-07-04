@@ -4,9 +4,9 @@
   <PlatformIDs>
     <string>Xiaomi.Surface.POCO X3 Pro.vayu</string>
   </PlatformIDs>
-  <FFUFileName>Vayu_WDC_Huaxing_128GB_HalfSplit.ffu</FFUFileName>
-  <DriverDefinitionPath>\definitions\Desktop\ARM64\Internal\vayu_huaxing.xml</DriverDefinitionPath>
-  <DiskTotalSize>126701535232</DiskTotalSize>
+  <FFUFileName>Vayu_128GB_MaximizedForWindows.ffu</FFUFileName>
+  <DriverDefinitionPath>\definitions\Desktop\ARM64\Internal\vayu.xml</DriverDefinitionPath>
+  <DiskTotalSize>126659592192</DiskTotalSize>
   <DiskSectorSize>4096</DiskSectorSize>
   <PartitionLayout>
     <GPTPartition>
@@ -210,7 +210,7 @@
       <Name>userdata</Name>
     </GPTPartition>
   </PartitionLayout>
-  <SplittingStrategy>HalfSplit</SplittingStrategy>
+  <SplittingStrategy>MaximizedForWindows</SplittingStrategy>
   <CustomSplittingAndroidDesiredSpace>4294967296</CustomSplittingAndroidDesiredSpace>
   <DiskGuid>efa6243a-085f-e745-f2ce-54d39ef34351</DiskGuid>
 </DeviceProfile>
