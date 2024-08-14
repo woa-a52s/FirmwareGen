@@ -2,7 +2,7 @@
 <DeviceProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SupplementaryBCDCommands />
   <PlatformIDs>
-    <string>Xiaomi.Surface.mi 9.cepheus</string>
+    <string>Xiaomi.SDM855.mi 9.cepheus</string>
   </PlatformIDs>
   <FFUFileName>Cepheus_128GB_HalfSplit.ffu</FFUFileName>
   <DriverDefinitionPath>\definitions\Desktop\ARM64\Internal\cepheus.xml</DriverDefinitionPath>

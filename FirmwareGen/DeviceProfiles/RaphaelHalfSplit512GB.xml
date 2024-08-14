@@ -2,7 +2,7 @@
 <DeviceProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SupplementaryBCDCommands />
   <PlatformIDs>
-    <string>Xiaomi.Surface.K20 Pro.raphael</string>
+    <string>Xiaomi.SDM855.K20 Pro.raphael</string>
   </PlatformIDs>
   <FFUFileName>Raphael_512GB_HalfSplit.ffu</FFUFileName>
   <DriverDefinitionPath>\definitions\Desktop\ARM64\Internal\raphael.xml</DriverDefinitionPath>
