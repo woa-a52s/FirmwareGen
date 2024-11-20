@@ -71,7 +71,7 @@ namespace FirmwareGen
             VolumeUtils.DismountVirtualHardDisk(TmpVHD);
 
             Logging.Log("Making FFU");
-            VolumeUtils.RunProgram(Img2Ffu, $@"-i {TmpVHD} -f ""{options.Output}\{deviceProfile.FFUFileName}"" -c {deviceProfile.DiskSectorSize * 4} -s {deviceProfile.DiskSectorSize} -p ""{string.Join(";", deviceProfile.PlatformIDs)}"" -o {options.WindowsVer} -b 4000");
+            VolumeUtils.RunProgram(Img2Ffu, $@"-i {TmpVHD} -d VenHw(860845C1-BE09-4355-8BC1-30D64FF8E63A) -l false -b 4000 -e .\provisioning-partitions.txt -i .\lun1.img -d VenHw(8D90D477-39A3-4A38-AB9E-586FF69ED051) -l true -b 4000 -e .\provisioning-partitions.txt -i .\lun2.img -d VenHw(EDF85868-87EC-4F77-9CDA-5F10DF2FE601) -l true -b 4000 -e .\provisioning-partitions.txt -i .\lun3.img -d VenHw(1AE69024-8AEB-4DF8-BC98-0032DBDF5024) -l true -b 4000 -e .\provisioning-partitions.txt -i .\lun4.img -d VenHw(D33F1985-F107-4A85-BE38-68DC7AD32CEA) -l true -b 4000 -e .\provisioning-partitions.txt -i .\lun5.img -d VenHw(4BA1D05F-088E-483F-A97E-B19B9CCF59B0) -l true -b 4000 -e .\provisioning-partitions.txt -v V2 -f ""{options.Output}\{deviceProfile.FFUFileName}"" -p ""{string.Join(";", deviceProfile.PlatformIDs)}"" -c 16384 -s 4096 ");
 
             Logging.Log("Deleting Temp VHD");
             File.Delete(TmpVHD);

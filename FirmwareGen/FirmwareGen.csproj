@@ -57,6 +57,12 @@
 	  <Content Include="DeviceProfiles\MTP8350MaximizedForWindows.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqHalfSplit128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqMaximizedForWindows.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
 	</ItemGroup>
 	<ItemGroup>
 		<PackageReference Include="CommandLineParser" Version="2.9.1" />
