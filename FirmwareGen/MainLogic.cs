@@ -1,4 +1,5 @@
 ﻿using FirmwareGen.CommandLine;
+using System.Diagnostics;
 using System.IO;
 
 namespace FirmwareGen
@@ -7,9 +8,11 @@ namespace FirmwareGen
     {
         public static bool VerifyAllComponentsArePresent()
         {
-            const string wimlib = "wimlib-imagex.exe";
-            const string Img2Ffu = "Img2Ffu.exe";
-            const string DriverUpdater = "DriverUpdater.exe";
+            string toolDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule?.FileName);
+
+            string wimlib = Path.Combine(toolDirectory, "wimlib-imagex.exe");
+            string Img2Ffu = Path.Combine(toolDirectory, "Img2Ffu.exe");
+            string DriverUpdater = Path.Combine(toolDirectory, "DriverUpdater.exe");
 
             if (!File.Exists(wimlib))
             {
@@ -34,9 +37,12 @@ namespace FirmwareGen
 
         public static void GenerateWindowsFFU(GenerateWindowsFFUOptions options)
         {
-            const string wimlib = "wimlib-imagex.exe";
-            const string Img2Ffu = "Img2Ffu.exe";
-            const string DriverUpdater = "DriverUpdater.exe";
+            string toolDirectory = Path.GetDirectoryName(Process.GetCurrentProcess().MainModule?.FileName);
+
+            string wimlib = Path.Combine(toolDirectory, "wimlib-imagex.exe");
+            string Img2Ffu = Path.Combine(toolDirectory, "Img2Ffu.exe");
+            string DriverUpdater = Path.Combine(toolDirectory, "DriverUpdater.exe");
+
             const string SystemPartition = "Y:";
 
             DeviceProfile deviceProfile = XmlUtils.Deserialize<DeviceProfile>(options.DeviceProfile);
@@ -71,7 +77,7 @@ namespace FirmwareGen
             VolumeUtils.DismountVirtualHardDisk(TmpVHD);
 
             Logging.Log("Making FFU");
-            VolumeUtils.RunProgram(Img2Ffu, $@"-i {TmpVHD} -f ""{options.Output}\{deviceProfile.FFUFileName}"" -c {deviceProfile.DiskSectorSize * 4} -s {deviceProfile.DiskSectorSize} -p ""{string.Join(";", deviceProfile.PlatformIDs)}"" -o {options.WindowsVer} -b 4000");
+            VolumeUtils.RunProgram(Img2Ffu, $@"-i {TmpVHD} -f ""{options.Output}\{deviceProfile.FFUFileName}"" -c {deviceProfile.DiskSectorSize * 4} -s {deviceProfile.DiskSectorSize} -p ""{string.Join(";", deviceProfile.PlatformIDs)}"" -o {options.WindowsVer} -b 4000 -v V2 -d VenHw(860845C1-BE09-4355-8BC1-30D64FF8E63A) -l false -e .\provisioning-partitions.txt -t ""{options.SecureBootSigningCommand}""");
 
             Logging.Log("Deleting Temp VHD");
             File.Delete(TmpVHD);
