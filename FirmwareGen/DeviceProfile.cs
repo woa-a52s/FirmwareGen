@@ -5,19 +5,11 @@ namespace FirmwareGen
 {
     public class DeviceProfile
     {
-        public virtual string[] SupplementaryBCDCommands
-        {
-            get; set;
-        }
         public virtual string[] PlatformIDs
         {
             get; set;
         }
         public virtual string FFUFileName
-        {
-            get; set;
-        }
-        public virtual string DriverDefinitionPath
         {
             get; set;
         }

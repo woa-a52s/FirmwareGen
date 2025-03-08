@@ -44,12 +44,12 @@ namespace FirmwareGen
             ulong DiskSize = deviceProfile.DiskTotalSize;
             uint SectorSize = deviceProfile.DiskSectorSize;
 
-            const string tmp = "tmp";
-            const string TmpVHD = $@"{tmp}\temp.vhdx";
+            const string OutputDir = "Output";
+            const string TmpVHD = $@"{OutputDir}\Output.vhdx";
 
-            if (!Directory.Exists(tmp))
+            if (!Directory.Exists(OutputDir))
             {
-                _ = Directory.CreateDirectory(tmp);
+                _ = Directory.CreateDirectory(OutputDir);
             }
 
             if (File.Exists(TmpVHD))

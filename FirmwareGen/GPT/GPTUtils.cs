@@ -30,7 +30,7 @@ namespace FirmwareGen.GPT
                 throw new Exception("ERROR");
             }
 
-            InjectWindowsPartitions(Partitions, SectorSize, 4, SplitInHalf, AndroidDesiredSpace);
+            //InjectWindowsPartitions(Partitions, SectorSize, 4, SplitInHalf, AndroidDesiredSpace);
 
             return MakeGPT(FirstLBA, LastLBA, SectorSize, [.. Partitions], DiskGuid, PartitionArrayLBACount: PartitionArrayLBACount, IsBackupGPT: IsBackupGPT);
         }
@@ -63,10 +63,10 @@ namespace FirmwareGen.GPT
                 ulong AndroidOtherLUNLBAUsage = 8_679_372 /* Size taken in Android by another LUN that counts towards Android space utilization */;
                 WindowsLBACount = (UsableLBACount + AndroidOtherLUNLBAUsage - ESPLBACount) / 2;
 
-                if (WindowsLBACount < SixtyFourGigaBytes)
-                {
-                    WindowsLBACount = SixtyFourGigaBytes;
-                }
+                //if (WindowsLBACount < SixtyFourGigaBytes)
+                //{
+                //    WindowsLBACount = SixtyFourGigaBytes;
+                //}
 
                 // In the case of the 4GB for Android strategy, we cannot do this or we risk to get userdata < 4GB
                 if (WindowsLBACount % BlockSize != 0)
@@ -80,10 +80,10 @@ namespace FirmwareGen.GPT
                 ulong FourGigaBytes = AndroidDesiredSpace / SectorSize;
                 WindowsLBACount = UsableLBACount - ESPLBACount - FourGigaBytes;
 
-                if (WindowsLBACount < SixtyFourGigaBytes)
-                {
-                    WindowsLBACount = SixtyFourGigaBytes;
-                }
+                //if (WindowsLBACount < SixtyFourGigaBytes)
+                //{
+                //    WindowsLBACount = SixtyFourGigaBytes;
+                //}
 
                 if (WindowsLBACount % BlockSize != 0)
                 {

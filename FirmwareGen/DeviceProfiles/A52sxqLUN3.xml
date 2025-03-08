@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DeviceProfile xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+	<PlatformIDs>
+		<string>Samsung.SM_KODIAK.Galaxy A52s 5G.a52sxq</string>
+	</PlatformIDs>
+	<DiskTotalSize>4194304</DiskTotalSize>
+	<DiskSectorSize>4096</DiskSectorSize>
+	<PartitionLayout>
+		<GPTPartition>
+			<TypeGUID>A19F205F-CCD8-4B6D-8F1E-2D9BC24CFFB1</TypeGUID>
+			<UID>FBF49C88-BD95-42D8-90D8-3D14AE78DAB2</UID>
+			<FirstLBA>32</FirstLBA>
+			<LastLBA>63</LastLBA>
+			<Attributes>0</Attributes>
+			<Name>cdt</Name>
+		</GPTPartition>
+		<GPTPartition>
+			<TypeGUID>20A0C19C-286A-42FA-9CE7-F64C3226A794</TypeGUID>
+			<UID>63105DD6-78C9-4732-ADFB-F9B70B6D04A7</UID>
+			<FirstLBA>64</FirstLBA>
+			<LastLBA>319</LastLBA>
+			<Attributes>0</Attributes>
+			<Name>ddr</Name>
+		</GPTPartition>
+		<GPTPartition>
+			<TypeGUID>00000000-0000-0000-0000-000000000000</TypeGUID>
+			<UID>6A4ABFC8-F560-4E9D-AE9B-08662ED013FA</UID>
+			<FirstLBA>320</FirstLBA>
+			<LastLBA>1018</LastLBA>
+			<Attributes>0</Attributes>
+			<Name>last_parti</Name>
+		</GPTPartition>
+	</PartitionLayout>
+	<DiskGuid>98101B32-BBE2-4BF2-A06E-2BB33D000C20</DiskGuid>
+</DeviceProfile>

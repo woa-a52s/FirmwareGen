@@ -3,7 +3,7 @@
 	<PlatformIDs>
 		<string>Samsung.SM_KODIAK.Galaxy A52s 5G.a52sxq</string>
 	</PlatformIDs>
-	<FFUFileName>A52sxqHalfSplit128GB.ffu</FFUFileName>
+	<FFUFileName>LA30GB_WP76GB_128GB.ffu</FFUFileName>
 	<DiskTotalSize>127385206784</DiskTotalSize>
 	<DiskSectorSize>4096</DiskSectorSize>
 	<PartitionLayout>
@@ -275,12 +275,12 @@
 			<TypeGUID>0fc63daf-8483-4772-8e79-3d69d8477de4</TypeGUID>
 			<UID>A99232B2-2B48-40AE-B5A6-F9A1B060ABFC</UID>
 			<FirstLBA>3229696</FirstLBA>
-			<LastLBA>31099900</LastLBA>
+			<LastLBA>31099898</LastLBA>
 			<Attributes>0</Attributes>
 			<Name>userdata</Name>
 		</GPTPartition>
 	</PartitionLayout>
-	<SplittingStrategy>HalfSplit</SplittingStrategy>
-	<CustomSplittingAndroidDesiredSpace>4294967296</CustomSplittingAndroidDesiredSpace>
+	<SplittingStrategy>Custom</SplittingStrategy>
+	<CustomSplittingAndroidDesiredSpace>32212254720</CustomSplittingAndroidDesiredSpace>
 	<DiskGuid>efa6243a-085f-e745-f2ce-54d39ef34351</DiskGuid>
 </DeviceProfile>

@@ -10,54 +10,72 @@
 		<ApplicationManifest>app.manifest</ApplicationManifest>
 	</PropertyGroup>
 	<ItemGroup>
-	  <None Remove="DeviceProfiles\CepheusHalfSplit128GB.xml" />
-	  <None Remove="DeviceProfiles\EpsilonHalfSplit128GB.xml" />
-	  <None Remove="DeviceProfiles\EpsilonHalfSplit256GB.xml" />
-	  <None Remove="DeviceProfiles\EpsilonMaximizedForWindows.xml" />
-	  <None Remove="DeviceProfiles\MTP8150MaximizedForWindows.xml" />
-	  <None Remove="DeviceProfiles\ZetaHalfSplit128GB.xml" />
-	  <None Remove="DeviceProfiles\ZetaHalfSplit256GB.xml" />
-	  <None Remove="DeviceProfiles\ZetaHalfSplit512GB.xml" />
-	  <None Remove="DeviceProfiles\ZetaMaximizedForWindows.xml" />
 	</ItemGroup>
 	<ItemGroup>
-	  <Content Include="DeviceProfiles\CepheusHalfSplit128GB.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA190GB_WP35GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\EpsilonHalfSplit128GB.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA170GB_WP55GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\EpsilonHalfSplit256GB.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA150GB_WP75GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\EpsilonMaximizedForWindows.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA130GB_WP95GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\ZetaHalfSplit128GB.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA110GB_WP115GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\ZetaHalfSplit256GB.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA90GB_WP135GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\ZetaHalfSplit512GB.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA70GB_WP155GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\ZetaMaximizedForWindows.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA50GB_WP175GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\MTP8150MaximizedForWindows.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA30GB_WP195GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\QRD8150MaximizedForWindows.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA10GB_WP215GB_256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\MTP50MaximizedForWindows.xml">
+	  <Content Include="DeviceProfiles\A52sxqHalfSplit256GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
-	  <Content Include="DeviceProfiles\MTP8350MaximizedForWindows.xml">
+	  <Content Include="DeviceProfiles\A52sxqLA10GB_WP96GB_128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqLA20GB_WP86GB_128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqLA30GB_WP76GB_128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqLA40GB_WP66GB_128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqLA50GB_WP56GB_128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqLA60GB_WP46GB_128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqLA70GB_WP36GB_128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqLA80GB_WP26GB_128GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="DeviceProfiles\A52sxqHalfSplit128GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqStock256GB.xml">
+	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+	  </Content>
+	  <Content Include="DeviceProfiles\A52sxqStock128GB.xml">
 	    <CopyToOutputDirectory>Always</CopyToOutputDirectory>
 	  </Content>
 	  <Content Include="DeviceProfiles\A52sxqMaximizedForWindows.xml">
